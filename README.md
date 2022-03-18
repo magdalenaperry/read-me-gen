@@ -22,3 +22,4 @@ After running node index.js, the application will prompt a series of questions w
 
 ## Demo
 ---
+![Demo Video](./assets/readme-generator.mp4)
