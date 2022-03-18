@@ -1,46 +1,24 @@
-`# ${title}
+# README Generator
 
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [License](#license)
-5. [Contributions](#contributions)
-6. [Tests](#tests)
-7. [Questions](#questions)
+4. [Demo](#demo)
 
 ## Description
-${description}
+---
+This is a README generator made using inquire to create a README.md file for a new project.
 
 ## Installation
-${installation}
+---
+    npm install 
+
+    node index.js
 
 ## Usage
-${usage}
+---
+After running node index.js, the application will prompt a series of questions within the command terminal. The application will take the input information and generate a new file with the information.
 
-## License
-{license}
-
-## Contrbutions
-${contributions}
-
-## Tests
-${tests}
-
-## Questions
-For any additional questions, please reach out to me through email.
-
-github: 
-${gitusername}
-
-email: 
-${email}`
-
-
-
-
-
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a 
-
-notice is added to the section of the README entitled License that explains which license the application is covered under
+## Demo
+---
