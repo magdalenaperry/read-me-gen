@@ -1,6 +1,6 @@
-# README Generator
+# Employee Manager
 
-![](https://img.shields.io/badge/License-Apache_2.0-white.svg)
+![](https://img.shields.io/badge/License-MIT-white.svg)
 
 ## Table of Contents
 1. [Description](#description)
@@ -13,26 +13,26 @@
 
 ## Description
 ---
-This is a README generator made using inquire to create a README.md file.
+This is a terminal based application made with SQL, inquirer, and console.table. The application was made to expedite updating an employee database and hosting information regarding department names, roles, and specific employees and their corresponding information.
 
 ## Installation
-    npm install
+    mysql -u root -p source schema.sql source seeds.sql exit node server.js
 
 ## Usage
 ---
-node index.js
+
 
 ## License
 ---
-Apache_2.0
+MIT
 
 ## Contrbutions
 ---
-There are no other contributors to this project.
+
 
 ## Tests
 ---
-    There are currently no tests on this project.
+    
 
 ## Questions
 ---
@@ -42,4 +42,3 @@ github:
 [github link](https://www.github.com/magdalenaperry)
 
 email: 
-mageltron@gmail.com

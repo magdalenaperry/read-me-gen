@@ -112,37 +112,44 @@ function init() {
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [License](#license)
-5. [Contributions](#contributions)
-6. [Tests](#tests)
-7. [Questions](#questions)
+4. [Visuals](#visuals)
+5. [License](#license)
+6. [Contributions](#contributions)
+7. [Tests](#tests)
+8. [Questions](#questions)
 
-## Description
 ---
+## Description
 ${description}
 
+---
 ## Installation
     ${installation}
 
-## Usage
 ---
+## Usage
 ${usage}
 
-## License
 ---
+## Visuals
+![Demo Link](http://youtube.com)
+
+
+---
+## License
 ${license}
 
-## Contrbutions
 ---
+## Contrbutions
 ${contributions}
 
-## Tests
 ---
+## Tests
     ${tests}
 
-## Questions
 ---
-For any additional questions, please reach out to me through email.
+## Questions
+For any additional questions, please reach out to me through email and follow me on GitHub.
 
 github: 
 [github link](https://www.github.com/${github})
