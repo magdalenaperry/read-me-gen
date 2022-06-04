@@ -3,48 +3,116 @@ const fs = require('fs')
 
 function init() {
     inquirer
-        .prompt([{
+        .prompt([
+            {
                 type: 'input',
                 message: 'What is the title of your project?',
                 name: 'title',
                 validate: function (answer) {
                     if (answer.length === 0) {
-                        return console.log("Please enter a valid project title.")
+                        return console.log("Please enter a project title.")
                     };
                     return true;
                 }
-            }, {
+            }, 
+            {
+                type: 'input',
+                message: 'What is the name of your repository?',
+                name: 'repoName',
+                validate: function (answer) {
+                    if (answer === 0) {
+                        return console.log("Please enter a valid repo name.")
+                    };
+                    return true;
+                }
+            }, 
+            {
                 type: 'input',
                 message: 'Please describe your project in complete sentences.',
                 name: 'description',
                 validate: function (answer) {
                     if (answer === 0) {
-                        return console.log("Please enter a valid project description.")
+                        return console.log("Please enter a project description.")
                     };
                     return true;
                 }
-            }, {
-                type: 'input',
-                message: 'What is your github username?',
-                name: 'github',
-                validate: function (answer) {
-                    if (answer === 0) {
-                        return console.log("Please enter your username.")
-                    };
-                    return true;
-                }
-            },
+            }, 
             {
-                type: 'input',
-                message: 'What is your email?',
-                name: 'email',
-                validate: function (answer) {
-                    if (answer === 0) {
-                        return console.log("Please enter your email.")
-                    };
-                    return true;
-                }
+                type: 'checkbox',
+                message: 'Select all technologies used to build this project. ',
+                name: 'technologies',
+                // validate: function (answer) {
+                //     if (answer === 0) {
+                //         return console.log("Please enter at least one technology used.")
+                //     };
+                //     return true;
+                // },
+                choices: [{
+                        name: 'html',
+                        value: 'HTML'
+                    },
+                    {
+                        name: 'handlebars',
+                        value: 'Handlebars.js'
+                    },
+                    {
+                        name: 'inquirer',
+                        value: 'Inquirer'
+                    },
+                    {
+                        name: 'react',
+                        value: 'React'
+                    },
+                    {
+                        name: 'MVC',
+                        value: 'Model View Controllers'
+                    },
+                    {
+                        name: 'Bootstrap',
+                        value: 'Bootstrap'
+                    },
+                    
+                ]
             },
+
+            // {
+            //     type: 'input',
+            //     message: 'What is your github username?',
+            //     name: 'github',
+            //     validate: function (answer) {
+            //         if (answer === 0) {
+            //             return console.log("Please enter your username.")
+            //         };
+            //         return true;
+            //     }
+            // },
+            // {
+            //     type: 'input',
+            //     message: 'What is your email?',
+            //     name: 'email',
+            //     validate: function (answer) {
+            //         if (answer === 0) {
+            //             return console.log("Please enter your email.")
+            //         };
+            //         return true;
+            //     }
+            // },
+            {
+                type: 'rawlist',
+                message: 'Select any prerequisites for installation.',
+                name: 'prerequisites',
+                choices: [{
+                        name: 'npm',
+                        value: 'npm'
+                    },
+                    {
+                        name: '',
+                        value: ''
+                    },
+                    
+                ]
+            },
+
             {
                 type: 'input',
                 message: 'Provide instructions to include in the installation section.',
@@ -79,7 +147,7 @@ function init() {
             },
             {
                 type: 'input',
-                message: 'List any contributions.',
+                message: 'Contributor GitHub username',
                 name: 'contributions',
             }, {
                 type: 'input',
@@ -94,6 +162,7 @@ function init() {
                 title,
                 description,
                 installation,
+                technologies,
                 usage,
                 license,
                 contributions,
@@ -104,7 +173,24 @@ function init() {
             }) {
 
                 const template =
-                    `# ${title}
+
+`
+
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+# ${title}
+
+<a href="https://github.com/magdalenaperry/read-me-gen">
+    <img src="https://via.placeholder.com/200" alt="Logo" width="100%" height="100%">
+  </a>
+
+
 
 ![](https://img.shields.io/badge/License-${license}-white.svg)
 
@@ -121,6 +207,11 @@ function init() {
 ---
 ## Description
 ${description}
+
+### Built With
+${technologies}
+
+### Prerequisites
 
 ---
 ## Installation
@@ -140,7 +231,7 @@ ${usage}
 ${license}
 
 ---
-## Contrbutions
+## Contributions
 ${contributions}
 
 ---
@@ -148,14 +239,48 @@ ${contributions}
     ${tests}
 
 ---
-## Questions
+
+## Roadmap
+- [x] List Item
+- [x] List Item
+- [ ] List Item
+- [ ] List Item
+- [ ] List Item
+    - [ ] Chinese
+    - [ ] Spanish
+
+
+## Contact
 For any additional questions, please reach out to me through email and follow me on GitHub.
 
-github: 
-[github link](https://www.github.com/${github})
+Name - [Magdalena Perry LinkedIn](https:www.linkedin.com/in/magdalenaperry) - mageltron@gmail.com
 
-email: 
-${email}`;
+Github - [magdalenaperry](https://www.github.com/magdalenaperry)
+
+email - [mageltron@gmail.com](mageltron@gmail.com)
+
+
+## Acknowledgements
+
+
+
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/magdalenaperry/read-me-gen.svg?style=for-the-badge
+[contributors-url]: https://github.com/magdalenaperry/read-me-gen/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/magdalenaperry/read-me-gen.svg?style=for-the-badge
+[forks-url]: https://github.com/magdalenaperry/read-me-gen/network/members
+[stars-shield]: https://img.shields.io/github/stars/magdalenaperry/read-me-gen.svg?style=for-the-badge
+[stars-url]: https://github.com/magdalenaperry/read-me-gen/stargazers
+[issues-shield]: https://img.shields.io/github/issues/magdalenaperry/read-me-gen.svg?style=for-the-badge
+[issues-url]: https://github.com/magdalenaperry/read-me-gen/issues
+[license-shield]: https://img.shields.io/github/license/magdalenaperry/read-me-gen.svg?style=for-the-badge
+[license-url]: https://github.com/magdalenaperry/read-me-gen/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/magdalenaperry
+[product-screenshot]: images/screenshot.png
+
+`;
 
 
                 createNewFile(title, template);
