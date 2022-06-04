@@ -1,3 +1,6 @@
+
+
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -5,9 +8,9 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Title
+# Chiron
 
-<a href="https://github.com/magdalenaperry/read-me-gen">
+<a href="https://github.com/magdalenaperry/brute-force-alpha-project">
     <img src="https://via.placeholder.com/200" alt="Logo" width="100%" height="100%">
   </a>
 
@@ -27,10 +30,10 @@
 
 ---
 ## Description
-ag
+
 
 ### Built With
-Handlebars.js
+HTML,Handlebars.js
 
 ### Prerequisites
 
@@ -87,16 +90,16 @@ email - [mageltron@gmail.com](mageltron@gmail.com)
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[contributors-url]: https://github.com/magdalenaperry/read-me-gen/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[forks-url]: https://github.com/magdalenaperry/read-me-gen/network/members
-[stars-shield]: https://img.shields.io/github/stars/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[stars-url]: https://github.com/magdalenaperry/read-me-gen/stargazers
-[issues-shield]: https://img.shields.io/github/issues/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[issues-url]: https://github.com/magdalenaperry/read-me-gen/issues
-[license-shield]: https://img.shields.io/github/license/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[license-url]: https://github.com/magdalenaperry/read-me-gen/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/magdalenaperry/brute-force-alpha-project.svg?style=for-the-badge
+[contributors-url]: https://github.com/magdalenaperry/brute-force-alpha-project/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/magdalenaperry/brute-force-alpha-project.svg?style=for-the-badge
+[forks-url]: https://github.com/magdalenaperry/brute-force-alpha-project/network/members
+[stars-shield]: https://img.shields.io/github/stars/magdalenaperry/brute-force-alpha-project.svg?style=for-the-badge
+[stars-url]: https://github.com/magdalenaperry/brute-force-alpha-project/stargazers
+[issues-shield]: https://img.shields.io/github/issues/magdalenaperry/brute-force-alpha-project.svg?style=for-the-badge
+[issues-url]: https://github.com/magdalenaperry/brute-force-alpha-project/issues
+[license-shield]: https://img.shields.io/github/license/magdalenaperry/brute-force-alpha-project.svg?style=for-the-badge
+[license-url]: https://github.com/magdalenaperry/brute-force-alpha-project/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/magdalenaperry
 [product-screenshot]: images/screenshot.png

@@ -48,27 +48,27 @@ function init() {
                 //     return true;
                 // },
                 choices: [{
-                        name: 'html',
+                        name: 'Html ',
                         value: 'HTML'
                     },
                     {
-                        name: 'handlebars',
+                        name: 'Handlebars.js ',
                         value: 'Handlebars.js'
                     },
                     {
-                        name: 'inquirer',
+                        name: 'Inquirer ',
                         value: 'Inquirer'
                     },
                     {
-                        name: 'react',
+                        name: 'React ',
                         value: 'React'
                     },
                     {
-                        name: 'MVC',
-                        value: 'Model View Controllers'
+                        name: 'Model View Controllers ',
+                        value: 'Model View Controllers '
                     },
                     {
-                        name: 'Bootstrap',
+                        name: 'Bootstrap ',
                         value: 'Bootstrap'
                     },
                     
@@ -163,6 +163,7 @@ function init() {
                 description,
                 installation,
                 technologies,
+                repoName,
                 usage,
                 license,
                 contributions,
@@ -186,7 +187,7 @@ function init() {
 
 # ${title}
 
-<a href="https://github.com/magdalenaperry/read-me-gen">
+<a href="https://github.com/magdalenaperry/${repoName}">
     <img src="https://via.placeholder.com/200" alt="Logo" width="100%" height="100%">
   </a>
 
@@ -266,16 +267,16 @@ email - [mageltron@gmail.com](mageltron@gmail.com)
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[contributors-url]: https://github.com/magdalenaperry/read-me-gen/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[forks-url]: https://github.com/magdalenaperry/read-me-gen/network/members
-[stars-shield]: https://img.shields.io/github/stars/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[stars-url]: https://github.com/magdalenaperry/read-me-gen/stargazers
-[issues-shield]: https://img.shields.io/github/issues/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[issues-url]: https://github.com/magdalenaperry/read-me-gen/issues
-[license-shield]: https://img.shields.io/github/license/magdalenaperry/read-me-gen.svg?style=for-the-badge
-[license-url]: https://github.com/magdalenaperry/read-me-gen/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/magdalenaperry/${repoName}.svg?style=for-the-badge
+[contributors-url]: https://github.com/magdalenaperry/${repoName}/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/magdalenaperry/${repoName}.svg?style=for-the-badge
+[forks-url]: https://github.com/magdalenaperry/${repoName}/network/members
+[stars-shield]: https://img.shields.io/github/stars/magdalenaperry/${repoName}.svg?style=for-the-badge
+[stars-url]: https://github.com/magdalenaperry/${repoName}/stargazers
+[issues-shield]: https://img.shields.io/github/issues/magdalenaperry/${repoName}.svg?style=for-the-badge
+[issues-url]: https://github.com/magdalenaperry/${repoName}/issues
+[license-shield]: https://img.shields.io/github/license/magdalenaperry/${repoName}.svg?style=for-the-badge
+[license-url]: https://github.com/magdalenaperry/${repoName}/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/magdalenaperry
 [product-screenshot]: images/screenshot.png
